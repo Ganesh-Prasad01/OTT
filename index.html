@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="GP.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <title>GP OTT</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        nav {
+            height: 65px;
+            width: 100%;
+            /* background-color: rgb(82, 136, 235); */
+            background: rgb(215, 215, 243, 0.4);
+            border-radius: 10px;
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-logo img {
+            height: 80px;
+            width: 90px;
+            margin: 7px 0px 7px 5px;
+        }
+
+        nav .nav-items {
+            position: absolute;
+            right: 30px;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            font-size: 18px;
+            padding: 15px 15px;
+            color: rgb(3, 8, 4);
+            font-weight: bold;
+            font-family: Cambria;
+        }
+
+        .nav-items a:hover {
+            color: cornsilk;
+            text-shadow: 2px 2px 5px rgb(225, 214, 2);
+        }
+
+        .carousel-inner {
+            /* margin: 30px 0px 0px 92px; */
+            border-radius: 10px;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 600px;
+        }
+
+        #carouselExampleAutoplaying {
+            width: 90%;
+            margin: 80px 0px 10px 70px;
+        }
+
+        .frww img {
+            height: 300px;
+            width: 230px;
+            justify-content: space-evenly;
+            margin: 5px;
+            /* align-items: center; */
+            /* margin: 10px; */
+            border-radius: 10px;
+            flex-wrap: wrap;
+        }
+
+        .frww {
+            margin: 10px 0px 0px 25px;
+        }
+
+        .frww img:hover {
+            scale: 1.1;
+            transition: all ease .6s;
+        }
+
+        .frw h2 {
+            color: rgb(191, 253, 253, 0.8);
+            margin: 0px 0px 0px 35px;
+        }
+
+        .recent h2 {
+            color: rgb(191, 253, 253, 0.8);
+            margin: 0px 0px 0px 35px;
+        }
+
+        .recent {
+            display: inline-block;
+        }
+
+        .frw {
+            display: inline-block;
+        }
+
+        .TR {
+            display: inline-block;
+        }
+
+        .TR1 {
+            margin: 10px 0px 0px 25px;
+        }
+
+        .TR1 img {
+            height: 300px;
+            width: 230px;
+            justify-content: space-evenly;
+            margin: 5px;
+            /* align-items: center; */
+            /* margin: 10px; */
+            border-radius: 10px;
+            flex-wrap: wrap;
+        }
+
+        .recentt img {
+            height: 300px;
+            width: 230px;
+            justify-content: space-evenly;
+            margin: 5px;
+            /* align-items: center; */
+            /* margin: 10px; */
+            border-radius: 10px;
+            flex-wrap: wrap;
+        }
+
+        .recentt img:hover {
+            scale: 1.1;
+            transition: all ease .6s;
+        }
+
+        .recentt {
+            margin: 10px 0px 0px 25px;
+        }
+
+        .foot {
+            height: 250px;
+            background: rgb(99, 83, 83, .5);
+            margin: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px;
+        }
+        .foot h4{
+            color: rgb(195, 174, 146,0.7);
+        }
+        .abt p{
+            color: antiquewhite;
+        }
+        .abt a{
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        footer h1 {
+            color: rgb(157, 223, 201, 0.8);
+            margin-left: 30PX;
+            font-size: 40px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="logo22.png" alt="">
+        </div>
+        <div class="nav-items">
+            <a href="#carouselExampleAutoplaying">Home</a>
+            <a href="#frew">Frequent Watched</a>
+            <a href="">Recent</a>
+            <a href="">Top Rated</a>
+            <a href="">Favourite</a>
+            <a href="">About</a>
+            <a href="signup.html">SignUp/SignIn</a>
+        </div>
+    </nav>
+    <!-- Home Section Start -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="jsp1.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="rrr.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="open.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="cw.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="jw.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="dp.jpg" class="d-block" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Home Section End -->
+    <div class="frw" id="frew">
+        <h2>Frequently Watched</h2>
+        <div class="frww">
+            <img src="avge.jpg" alt="">
+            <img src="jk.avif" alt="">
+            <img src="bd.webp" alt="">
+            <img src="arival.jpeg" alt="">
+            <img src="hp1.jpg" alt="">
+            <img src="GP.png" alt="">
+            <img src="hk.jfif" alt="">
+            <img src="bb.jpg" alt="">
+            <img src="wood.webp" alt="">
+            <img src="sh1.jpg" alt="">
+            <img src="master.jpg" alt="">
+            <img src="gg.jpg" alt="">
+        </div>
+    </div>
+    <div class="recent" id="rec">
+        <h2>Recent Released</h2>
+        <div class="recentt">
+            <img src="avge.jpg" alt="">
+            <img src="jk.avif" alt="">
+            <img src="bd.webp" alt="">
+            <img src="arival.jpeg" alt="">
+            <img src="hp1.jpg" alt="">
+            <img src="GP.png" alt="">
+            <img src="hk.jfif" alt="">
+            <img src="bb.jpg" alt="">
+            <img src="wood.webp" alt="">
+            <img src="sh1.jpg" alt="">
+            <img src="master.jpg" alt="">
+            <img src="gg.jpg" alt="">
+        </div>
+    </div>
+    <div class="TR" id="top">
+        <h2>Top Rated</h2>
+        <div class="TR1">
+            <img src="avge.jpg" alt="">
+            <img src="jk.avif" alt="">
+            <img src="bd.webp" alt="">
+            <img src="arival.jpeg" alt="">
+            <img src="hp1.jpg" alt="">
+            <img src="GP.png" alt="">
+            <img src="hk.jfif" alt="">
+            <img src="bb.jpg" alt="">
+            <img src="wood.webp" alt="">
+            <img src="sh1.jpg" alt="">
+            <img src="master.jpg" alt="">
+            <img src="gg.jpg" alt="">
+        </div>
+    </div>
+    <footer>
+        <h1>About</h1>
+        <div class="foot">
+            <div class="abt"><h4>company</h4>
+                <p><a href="">About Us</a></p>
+                <p><a href="">Careers</a></p>
+            </div>
+            <div class="abt"><h4>View Website In</h4>
+                <p>English</p>
+                <p>French</p>
+                <p>German</p>
+            </div>
+            <div class="abt"><h4>Need Help</h4></div>
+            <div class="abt"><h4>Contact Us</h4></div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
